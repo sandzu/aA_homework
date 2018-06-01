@@ -6,6 +6,10 @@ export const pokemonReducer = (state = {}, action) => {
       return ({
         pokemon: action.pokemon
       });
+    // case RECEIVE_SINGLE_POKEMON:
+    //   return({
+    //     pokemon: action.pokemon
+    //   }); //not sure if this is right, wouldn't we just put the recieved pokemon in a special place in the state?
     default:
       return state;
   }
